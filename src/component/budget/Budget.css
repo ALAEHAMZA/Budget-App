@@ -1,0 +1,12 @@
+.budget{
+    color: white;
+    background-color: #004080;
+    border: 3px solid #004080;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}

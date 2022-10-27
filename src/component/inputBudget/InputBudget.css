@@ -1,0 +1,23 @@
+
+.inputbudget input{
+    height: 35px;
+    width: 300px;
+    background-color: white;
+    color: #004080;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+button{
+    background-color: orange;
+    color: white;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+input::placeholder{
+    color:#004080;
+    text-align: center;
+}
+
