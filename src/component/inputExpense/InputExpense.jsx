@@ -39,13 +39,22 @@ const InputExpense=()=>{
                         value={name}
                         onChange={(e)=>setName(e.target.value)}
                     />
-                    <input 
-                        required='required'
-                        type="text"  
-                        placeholder="Categorie"
-                        value={categorie}
-                        onChange={(e)=>setCategorie(e.target.value)}
-                    />
+                    <select required value={categorie} onChange={(e)=>setCategorie(e.target.value)}>
+                            <option value="" disabled selected hidden>Categorie</option>
+                            <option value="Alimentation">Alimentation</option>
+                            <option value="Clothing">Clothing</option>
+                            <option value="Cadeau">Cadeau</option>
+                            <option value="hairdressing">Hairdressing</option>
+                            <option value="Internet">Internet</option>
+                            <option value="Telephone">Telephone</option>
+                            <option value="Education">Education</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Services">Services</option>
+                            <option value="Restauration">Restauration</option>
+                            <option value="Autre...">Autre...</option>
+                    </select>
+
                     <input 
                         required='required'
                         type="date"

@@ -13,8 +13,8 @@ const Liste=()=>{
     }
 
     return(
-        <div className="liste">
-            <h2>Expenses</h2>
+        <fieldset className="liste">
+            <legend><h2>Expenses</h2></legend>
             <table className="table">
                 <thead>
                     <td>Name</td>
@@ -34,7 +34,7 @@ const Liste=()=>{
                         </tr>
                     ))}
             </table>
-        </div> 
+        </fieldset> 
     );
 }
 
