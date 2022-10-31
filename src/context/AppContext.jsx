@@ -26,9 +26,9 @@ const AppReducer = (state, action) => {
 };
 
 const State = {
-	budget: 2000,
+	budget: 0,
 	expenses: [
-		{name: 'Shopping', categorie: 'Shopping' , date : Date('2020-01-30')  , price: 50 },
+
 	]
 };
 

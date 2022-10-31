@@ -6,7 +6,7 @@ import './InputBudget.css'
 
 const InputBudget=()=>{
     const {dispatch}=useContext(AppContext);
-    const {budget,setBudget}=useState('');
+    const [budget,setBudget]=useState('');
 
     const enterBudget=(e)=>{
         e.preventDefault();

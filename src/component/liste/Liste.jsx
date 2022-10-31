@@ -23,7 +23,7 @@ const Liste=()=>{
                     <td>Price</td>
                     <td>Action</td>
                 </thead>
-                
+                    
                     {expenses.map((item)=>(
                         <tr>
                             <td>{item.name}</td>
