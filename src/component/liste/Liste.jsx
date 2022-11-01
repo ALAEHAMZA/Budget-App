@@ -8,7 +8,7 @@ const Liste=()=>{
     const deleteItem =(props)=>{
         dispatch({
             type:'delete',
-            payload: props.name
+            payload: props.id
         })
     }
 

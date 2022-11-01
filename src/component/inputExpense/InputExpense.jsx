@@ -17,7 +17,6 @@ const InputExpense=()=>{
             date: date,
             price:parseInt(price)
         }
-        
         dispatch({
             type:'add',
             payload: expense,
