@@ -22,7 +22,21 @@ const config={
 
 function Graphe() {
   const { expenses } =useContext(AppContext);
-  const data = expenses.map(item=> {return item.price})
+
+  const categorie = expenses.reduce(function (acc, obj) {
+    var cle = obj["categorie"];
+    if(!acc[cle]){
+      acc[cle] = 0;
+    }
+    acc[cle]+=(obj.price);
+    return acc;
+  }, {})
+
+  var data = Object.keys(categorie).map(function(cle) {
+    return  categorie[cle]
+});
+
+
   const config={
       data : {
       datasets: [{
